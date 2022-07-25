@@ -9,8 +9,8 @@ jobs:
       - name: Instala o node com a versão
         uses: actions/setup-node@v3
         with:
-          node-version: '12'
+          node-version: 12
       - name: Instala dependências
-        run: npm i
+        run: npm install
       - name: Roda eslint
-        run: npx eslint
+        run: npx eslint .
